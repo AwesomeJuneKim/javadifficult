@@ -4,10 +4,15 @@ public class Test3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		long d= 2147364821;
-		System.out.println(d);
+		float exchangeRate = (float)1236.30213f;
+		System.out.println(exchangeRate);
 		int num = 21478569;
-		System.out.println(num);
+		
+		int numSize = Integer.SIZE;
+		System.out.println("numSize="+ numSize);
+		int dSize = Long.SIZE;
+		System.out.println("dSize= "+ dSize);
 	}
+	
 
 }
