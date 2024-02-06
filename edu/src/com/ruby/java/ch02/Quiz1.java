@@ -12,7 +12,7 @@ public class Quiz1 {
 		
 		int sum1=0;//홀수 합
 		int sum2=0;//짝수 합
-		for (int i=0;i<=10;i++) {
+		for (int i=0;i<=num;i++) {
 			
 			if(i%2==0) {		//짝수
 				sum2+=i;
@@ -25,5 +25,5 @@ public class Quiz1 {
 		}
 		System.out.println("OK:"+sum1+","+sum2);	
 	}
-
+//for (int i=0; i<10; i+=2)->위의 식을 간단히 한 것
 }
