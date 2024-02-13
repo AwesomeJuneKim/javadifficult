@@ -24,21 +24,21 @@ public class MatrixQuiz {
 				}
 			}
 		}
-		for(int i=0;i<3;i++) {
+	for(int i=0;i<3;i++) {
 			for(int j=0;j<3;j++) {
 				System.out.print(mR[i][j]+" ");
 			}
 			System.out.println();
 		}
 	}
-	public void print() {}
+	//public void print(){}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		MatrixQuiz mq= new MatrixQuiz();
 		mq.multiple();
-		mq.print();
+		//mq.print();
 		//Test t1= new Test();
 		//t1.multiple();
 		//t1.print();
