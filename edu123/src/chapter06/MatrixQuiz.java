@@ -31,14 +31,21 @@ public class MatrixQuiz {
 			System.out.println();
 		}
 	}
-	public void print() {}
+/*	public void print() {		//line29를 풀어쓰면
+		for(int i=0; i<mR.length;i++) {
+			for(int j=0; i<mR[0].length;j++) {
+				System.out.print(mR[i][j]+"/t");
+			}
+			System.out.println();
+		} 
+	}*/
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		MatrixQuiz mq= new MatrixQuiz();
 		mq.multiple();
-		mq.print();
+		//mq.print();
 		//Test t1= new Test();
 		//t1.multiple();
 		//t1.print();
