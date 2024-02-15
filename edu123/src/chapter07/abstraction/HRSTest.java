@@ -49,7 +49,7 @@ class Director extends Manager{
 }
 public class HRSTest{
 	public static void calcTax(Employee X) {
-		
+		System.out.println("소득세를 계산합니다.");
 	}
 		public static void main(String[] args) {
 			Salesman s= new Salesman();
@@ -61,15 +61,26 @@ public class HRSTest{
 			HRSTest h= new HRSTest();
 			
 			h.calcTax(d);
-			calcTax(s);
-			
-			s.calcSalary();
+			//HRSTest의 calcTax를 호출해서 임플로이대신 디를 입력할 수 있으므로 해당바디가 출력된다.
 			calcTax(s);
 			calcTax(c);
 			calcTax(d);
-
+			//calcTax메소드에 static이 없다면 실행 될 수 없다. 
+			//위의 방법처럼 클래스의 인스턴스를 통해 호출해야 출력된다.
+			
+			s.calcSalary();
 			s.calcBonus();
 			c.calcBonus();
 			d.calcBonus();
+			
+			System.out.println(s.toString());
+			System.out.println(c.toString());
+			System.out.println(d.toString());
+			
+			if(s.equals(c)) {
+				System.out.println("동일한 객체입니다.");
+			}else {
+				System.out.println("서로 다른 객체입니다.");
+			}
 		}
 	}
