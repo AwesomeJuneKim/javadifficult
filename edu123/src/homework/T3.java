@@ -12,8 +12,13 @@ public class T3 {
 			this.rows = rows; this.cols = cols;
 			data = new int[rows * cols];
 		}
-		void getData() {
+		public void getData(int[][]X) {
 			// 난수로 입력
+			Random rnd=new Random();
+			for(int i=0; i<X.length;i++)
+				for(int j=0;j<X[0].length;j++)
+					X[i][j]=rnd.nextInt(10);
+					
 		}
 		Matrix addMatrix(Matrix b) {
 			Matrix m = new Matrix(this.rows, this.cols);
@@ -27,9 +32,12 @@ public class T3 {
 			Matrix m = new Matrix(this.cols, this.rows);
 			return m;
 		}
-		void showMatrix(String str) {
+		void showMatrix(String str, int[][]B) {
+			for(int i=0;i<B.length;i++)
+				for(int j=0; j<B[0].length;j++)
+					System.out.print(B[i][j]+" ");
 			System.out.println(str);
-			//2차원 배열 모양으로 출력하는 코드 작성
+			// 2차원 배열 모양으로 출력하는 코드 작성
 		}
 	}
 	public class Test_Chap06_행렬클래스 {
