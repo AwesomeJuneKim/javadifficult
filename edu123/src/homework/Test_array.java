@@ -13,9 +13,10 @@ public class Test_array {
 		static void showMatrix(int[][] X) {
 			// 2차원 모습으로 출력
 			for(int i=0;i<X.length;i++) {
-				for(int j=0;j<X.length;j++) {
-					System.out.println(X[i][j]+" ");
+				for(int j=0;j<X[i].length;j++) {
+					System.out.print(X[i][j]+" ");
 				}
+				System.out.println();
 			}
 		}
 
@@ -47,7 +48,7 @@ public class Test_array {
 			int m[][];
 			int r=B.length;
 			int c=B[0].length;
-			m = new int[r][c];
+			m = new int[c][r];
 			for(int i=0;i<r;i++)
 				for(int j=0;j<c;j++) 
 					m[j][i]=B[i][j];
