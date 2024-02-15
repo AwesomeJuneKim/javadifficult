@@ -48,11 +48,26 @@ class Director extends Manager{
 		}
 }
 public class HRSTest{
+	public static void calcTax(Employee X) {
+		
+	}
 		public static void main(String[] args) {
 			Salesman s= new Salesman();
+			Employee e= new Salesman();
+			//Salesman은 Employee보다 하위 개념이므로 세일즈맨을 임플로이에 대입할 수 있지만
+			//임플로이를 세일즈맨에 대입할 수 없다.
 			Consultant c= new Consultant();
 			Director d= new Director();
+			HRSTest h= new HRSTest();
 			
+			h.calcTax(d);
+			calcTax(s);
+			
+			s.calcSalary();
+			calcTax(s);
+			calcTax(c);
+			calcTax(d);
+
 			s.calcBonus();
 			c.calcBonus();
 			d.calcBonus();
