@@ -32,6 +32,14 @@ public class MatrixQuiz {
 		}
 	}
 	//public void print(){}
+/*	public void print() {		//line29를 풀어쓰면
+		for(int i=0; i<mR.length;i++) {
+			for(int j=0; i<mR[0].length;j++) {
+				System.out.print(mR[i][j]+"/t");
+			}
+			System.out.println();
+		} 
+	}*/
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
