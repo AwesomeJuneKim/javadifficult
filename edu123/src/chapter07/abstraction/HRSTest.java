@@ -49,7 +49,7 @@ class Director extends Manager{
 }
 public class HRSTest{
 	public static void calcTax(Employee X) {
-		
+		System.out.println("소득세를 계산합니다.");
 	}
 		public static void main(String[] args) {
 			Salesman s= new Salesman();
