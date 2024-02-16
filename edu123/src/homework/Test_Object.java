@@ -1,6 +1,6 @@
 package homework;
 
-public class T2 {
+public class Test_Object {
 
 	// 하나의 java file에 Student 객체를 정의하고 구현하는 실습
 	/*
@@ -19,6 +19,15 @@ public class T2 {
 		public String toString() {
 			return "sid=" + sid + ", sname=" + sname + ", city=" + city;
 		}
+		public Student(int sid) {
+			this();
+			this.sid=sid;
+		}
+		public Student(int sid, String name, String city) {
+			this(sid);
+			this.sname=name;
+			this.city=city;
+		}
 
 		public void showObject() {
 			System.out.println("[" + sid + ", " + sname + ", " + city + "]");
@@ -32,6 +41,11 @@ public class T2 {
 	class WorkStudent extends Student {
 		String eno;
 		String company;
+		public WorkStudent(int sid, String sname, String city, String eno, String company) {
+			super(sid,sname,city);
+			this.eno=eno;
+			this.company=company;
+		}
 
 		public String toString() {
 			 return 
@@ -63,13 +77,14 @@ public class T2 {
 		}
 
 		public static void main(String[] args) {
-			Student arry[] = new Student[5];
+			Student arry[] = new Student[10];
 			showNumberObjects();
 			arry[0] = new Student();
 			arry[1] = new Student(202301);
-			arry[2] = new WorkStudent();
-			arry[3] = new CodingWorkStudent();
-			arry[3] = new WorkStudent();
+			arry[2] = new Student(202301,"Hong","Busan");
+			arry[3] = new WorkStudent(1234,"Hong","Busan","e1","naver");
+			arry[4] = new CodingWorkStudent();
+			arry[5] = new WorkStudent();
 			showNumberObjects();
 			for (Student s : arry) {
 				System.out.println(s.toString());
