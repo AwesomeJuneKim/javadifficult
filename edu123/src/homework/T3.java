@@ -1,5 +1,7 @@
 package homework;
 
+import java.util.Random;
+
 public class T3 {
 	/*
 	 * 클래스 메소드 구현 실습 목적
