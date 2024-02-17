@@ -19,7 +19,7 @@ public class MessengerTest {
 		galaxy.setLogin(true);
 		galaxy.getMessage();
 		galaxy.setMessage("hi");
-		galaxy.changeKeyboard();
+		galaxy.ChangeKeyboard();
 		
 		galaxy.fileDownload();
 		galaxy.fileUpload();
