@@ -2,8 +2,6 @@ package chapter07;
 
 import java.util.Random;
 
-import javax.security.auth.x500.X500Principal;
-
 /*
 	 * 클래스 메소드 구현 실습 목적
 	 */
