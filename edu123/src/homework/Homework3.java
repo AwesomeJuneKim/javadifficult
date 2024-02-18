@@ -28,7 +28,7 @@ public class Homework3 {
 			B[i][j]=rnd.nextInt(10);
 	}
 
-	static int[][] addMatrix(int[][]B, int[][]C){
+	int[][] addMatrix(int[][]B, int[][]C){
 		int[][]m=new int[B.length][B[0].length];
 				for(int i=0;i<B.length;i++)
 					for(int j=0;j<B[i].length;j++)
@@ -64,12 +64,13 @@ public class Homework3 {
 		int[][]B= new int[3][4];
 		int[][]C=new int[3][4];
 		int[][]E= new int[4][5];
+		Homework3 homework= new Homework3();
 		
 		System.out.println("행렬 더하기: A[3][4] = B[3][4] + C[3][4]");
 		getData(B);
 		getData(C);
 		getData(E);
-		int[][]A = addMatrix(B, C);
+		int[][]A = homework.addMatrix(B, C);
 		showMatrix(B);
 		showMatrix(C);
 		showMatrix(A);
