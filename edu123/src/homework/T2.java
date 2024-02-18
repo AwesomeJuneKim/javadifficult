@@ -16,7 +16,7 @@ public class T2 {
 		String sname; // 학생 이름
 		String city; // 주소 도시
 
-		public String toString() {
+		public String toString(int a, String b, String c) {
 			return "sid=" + sid + ", sname=" + sname + ", city=" + city;
 		}
 
@@ -34,12 +34,13 @@ public class T2 {
 		String company;
 
 		public String toString() {
-			 return 
+			 return "eno="+eno+", company="+company;
 		 }
 
 		public void showObject() {
 			// Student 출력 코드 추가
 			System.out.println("[" + eno + ", " + company + "]");
+			showNumberObjects();
 		}
 	}
 
@@ -47,12 +48,13 @@ public class T2 {
 		String language;
 
 		public String toString() {
-			 return 
+			 return "language="+language;
 		 }
 
 		public void showObject() {
 			// WorkStudent 출력 코드 추가
 			System.out.println("[" + language + "]");
+			
 		}
 	}
 
@@ -66,7 +68,7 @@ public class T2 {
 			Student arry[] = new Student[5];
 			showNumberObjects();
 			arry[0] = new Student();
-			arry[1] = new Student(202301);
+			arry[1] = new Student(202301,"홍길동","Busan");
 			arry[2] = new WorkStudent();
 			arry[3] = new CodingWorkStudent();
 			arry[3] = new WorkStudent();

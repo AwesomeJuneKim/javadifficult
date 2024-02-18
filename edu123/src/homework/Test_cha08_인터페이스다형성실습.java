@@ -1,4 +1,4 @@
-package chapter08;
+package homework;
 
 /*
  * 인터페이스 다형성 실습 코드
