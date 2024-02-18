@@ -78,6 +78,6 @@ public class Homework3 {
 		showMatrix(B);
 		showMatrix(F);
 
-	}김우정이 다해라!!!
+	}
 
 }
