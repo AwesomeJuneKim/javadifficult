@@ -37,7 +37,7 @@ class Matrix {
 	Matrix multiplyMatrix(Matrix b) {
 		Matrix m = new Matrix(this.rows, b.cols);
 		for (int i = 0; i < this.rows; i++)
-			for (int j = 0; j < this.cols; j++)
+			for (int j = 0; j < b.cols; j++)
 				for (int k = 0; k < this.cols; k++)
 					m.data[i][j] += this.data[i][k] * b.data[k][j];
 		return m;

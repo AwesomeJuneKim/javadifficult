@@ -1,6 +1,6 @@
 package homework;
 
-public class Test_Object {
+
 
 	// 하나의 java file에 Student 객체를 정의하고 구현하는 실습
 	/*
@@ -89,14 +89,14 @@ public class Test_Object {
 	}
 
 	// 생성자 구현한다.
-	public class Test_Chap06_객체배열 {
+	public class Test_Object {
 		static void showObjects(InterfaceStudents is) {
 			is.showObject();
 		}
 
 		public static void main(String[] args) {
 			
-			Student arry[] = new Student[10];
+			Student arry[] = new Student[6];
 			Student.showNumberObjects();
 			arry[0] = new Student();
 			arry[1] = new Student(202301);
@@ -115,4 +115,4 @@ public class Test_Object {
 
 	}
 
-}
+
