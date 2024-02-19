@@ -9,13 +9,19 @@ abstract class Employee {
 }
 
 class Salesman extends Employee {
+
+	@Override
 	public void calcSalary() {
+		// TODO Auto-generated method stub
 		System.out.println("Salesman 급여= 기본급+판매 수당");
 	}
 
+	@Override
 	public void calcBonus() {
+		// TODO Auto-generated method stub
 		System.out.println("Salesman 보너스=기본급*12*4");
 	}
+	
 }
 
 class Consultant extends Employee {
@@ -54,12 +60,15 @@ public class HRSTest{
 		public static void main(String[] args) {
 			Salesman s= new Salesman();
 			Employee e= new Salesman();
-			//Salesman은 Employee보다 하위 개념이므로 세일즈맨을 임플로이에 대입할 수 있지만
-			//임플로이를 세일즈맨에 대입할 수 없다.
 			Consultant c= new Consultant();
 			Director d= new Director();
 			HRSTest h= new HRSTest();
 			
+			//Salesman은 Employee보다 하위 개념이므로 세일즈맨을 임플로이에 대입할 수 있지만
+			//임플로이를 세일즈맨에 대입할 수 없다.
+			//h.calcTax(c);는 HRSTest 클래스의 calcTax 메소드를 호출하는 구문입니다. 여기서 c는 Consultant 클래스의 객체를 가리킵니다.
+			//메소드 시그니처인 public static void calcTax(Employee X)를 보면, 이 메소드는 Employee 클래스나 그 하위 클래스의 객체를 매개변수로 받습니다. 
+			//따라서 Consultant 클래스는 Employee 클래스의 하위 클래스이므로 calcTax 메소드에 전달될 수 있습니다.
 			h.calcTax(d);
 			//HRSTest의 calcTax를 호출해서 임플로이대신 디를 입력할 수 있으므로 해당바디가 출력된다.
 			calcTax(s);

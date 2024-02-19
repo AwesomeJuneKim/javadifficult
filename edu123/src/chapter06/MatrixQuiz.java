@@ -24,13 +24,14 @@ public class MatrixQuiz {
 				}
 			}
 		}
-		for(int i=0;i<3;i++) {
+	for(int i=0;i<3;i++) {
 			for(int j=0;j<3;j++) {
 				System.out.print(mR[i][j]+" ");
 			}
 			System.out.println();
 		}
 	}
+	//public void print(){}
 /*	public void print() {		//line29를 풀어쓰면
 		for(int i=0; i<mR.length;i++) {
 			for(int j=0; i<mR[0].length;j++) {
