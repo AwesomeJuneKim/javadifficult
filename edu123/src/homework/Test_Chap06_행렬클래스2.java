@@ -30,15 +30,25 @@ class Matrix {
 	}
 	Matrix multiplyMatrix(Matrix b) {
 		Matrix m = new Matrix(this.rows, b.cols);
-		for(int i=0;i<this.rows;i++)
-			for(int j=0;j<b.cols;j++)
-				 sum=0;
-				for(int k=0; k<this.cols;k++)
-					m.data[i]+=
+		for(int i=0;i<this.rows;i++) {
+			for(int j=0;j<b.cols;j++) {
+				 int sum=0;
+				for(int k=0; k<this.cols;k++) {
+					sum+= this.data[i*this.cols+k]*b.data[k*b.cols+j];
+				}
+				m.data[i*b.cols+j]=sum;
+			}
+		}
 		return m;	
 	}
 	Matrix transposeMatrix() {
 		Matrix m = new Matrix(this.cols, this.rows);
+		for(int i=0;i<this.rows;i++) {
+			for(int j=0; j<this.cols;j++) {
+				m.data[j*this.rows+i]=this.data[i*this.cols+j];
+			}
+		
+		}
 		return m;
 	}
 	void showMatrix(String str) {
