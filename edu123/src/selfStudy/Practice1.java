@@ -1,4 +1,4 @@
-package practiceSchool;
+package selfStudy;
 
 interface Vehicle {
 	public abstract void showVehicle();

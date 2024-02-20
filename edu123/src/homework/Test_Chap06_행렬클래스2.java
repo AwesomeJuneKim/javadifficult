@@ -47,7 +47,6 @@ class Matrix {
 			for(int j=0; j<this.cols;j++) {
 				m.data[j*this.rows+i]=this.data[i*this.cols+j];
 			}
-		
 		}
 		return m;
 	}
