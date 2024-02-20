@@ -21,7 +21,7 @@ class Card{
 			Card c= (Card)obj;
 			return this.kind.equals(c.kind) && this.number==c.number;
 		}
-		//equals를 오버라이딩 하면 hashcode도 오버라이딩 해줘야 한다.
+		//equals를 오버라이딩 하면 hashcode도 오버라이딩 해줘야 한다(source에 해쉬코드와 이퀄스 제너레이션 버튼이 있음)
 		public int hashCode() {
 			return Objects.hash(kind, number);//매개변수의 숫자는 실행에 관계없음(아무거나 넣어도 된다)
 		}
