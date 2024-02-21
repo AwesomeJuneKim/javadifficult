@@ -28,7 +28,7 @@ public class Test01_1_ArrayList {
 		System.out.println("len2 = " + len2);
 
 		ArrayList<String> list = new ArrayList<>();//String 객체로 제한 > 바람직한 형태이다 
-		//2+ 원래는 new ArrayList <String>()
+								//2+ 원래는 new ArrayList <String>()
 
 		list.add("서울");		list.add("북경");		list.add("상해");
 		list.add("서울");		list.add("도쿄");		list.add("뉴욕");
@@ -95,6 +95,7 @@ public class Test01_1_ArrayList {
 		print(12, list2);
 
 		// boolean addAll(Collection<? extends E> c) - ?는 wild card 사용 *** 중요
+		//2+ 노션에 설명 와일드카드, addAll의 의미
 		list.addAll(list2);
 		print(13, list);
 
