@@ -52,7 +52,16 @@ public class EnumTest02 {
 	public static void main(String[] args) {
 		Mandarin m;//생성자를 호출하지 않는다
 		//Mandarin m2 = new Mandarin(100);//생성자를 호출할 수 없다 - 주의점 
-		//!!!!생성자는 항상private이기 때문에 외부에서 호출 불가능!!!!
+		//*
+		//수업 중 추가 2/20 1st
+//		for(Mandarin mnd:m4) {
+//			System.out.println("price= "+mnd.getPrice());
+//		}
+//		Mandarin m4[]=Mandarin.values();
+		
+		//수업 중 추가2/20 1st
+		Mandarin m5=Mandarin.황금향;//황금향만 불러오고 싶지만 모두가 불려온다.
+			System.out.println("m5= +"m5.getPrice());
 		
 		Mandarin ma = Mandarin.한라봉;//enum 클래스 생성자가 호출된다 
 		System.out.println("enum 객체 생성전");
