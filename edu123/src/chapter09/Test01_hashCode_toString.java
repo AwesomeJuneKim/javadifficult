@@ -2,12 +2,12 @@
 package chapter09;
 class MyObject {
 	public MyObject() {}
-	@Override object 클래스의
+	//@Override object 클래스의 toString()메서드를 원하는 출력으로 고쳐줘야 한다.
 	public String toString() {
 		return "MyObject2";
 	}
 }
-public class Test01 {
+public class Test01_hashCode_toString {
 	public static void main(String[] args) {
 		Object obj1 = new Object();
 		Object obj2 = new Object();

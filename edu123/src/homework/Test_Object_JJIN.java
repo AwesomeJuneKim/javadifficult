@@ -89,7 +89,7 @@ package homework;
 	}
 
 	// 생성자 구현한다.
-	public class Test_Object {
+	public class Test_Object_JJIN {
 		static void showObjects(InterfaceStudents is) {
 			is.showObject();
 		}
