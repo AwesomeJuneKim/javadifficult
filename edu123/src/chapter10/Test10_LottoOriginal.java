@@ -13,10 +13,10 @@ public static void main(String[] args) {
 public static void lotto_generator(int n) {
 	Random number = new Random();
 	HashSet<Integer> lotto = null;
-	for (int i = 1; i < n; i++) {
+	for (int i = 0; i < n; i++) {
 		lotto = new HashSet<Integer>();
-		for (int j = 1; lotto.size() <= 6; j++) {
-			lotto.add(number.nextInt(46));
+		for (int j = 0; lotto.size() <= 6; j++) {
+			lotto.add(1+number.nextInt(45));
 //			System.out.println("lotto_size = " + lotto.size());
 		}
 		List<Integer> L = new ArrayList<Integer>(lotto);
