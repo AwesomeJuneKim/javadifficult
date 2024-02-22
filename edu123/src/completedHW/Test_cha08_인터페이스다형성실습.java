@@ -1,4 +1,4 @@
-package homework;
+package completedHW;
 /*
  * 인터페이스 다형성 실습 코드
  */
