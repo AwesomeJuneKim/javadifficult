@@ -21,13 +21,13 @@ public class Test05_LinkedList {
 		
 		list.add(1, "LA");
 		print(1, list);
-		//2+ print(,) 공부해보기
+		//1+ print(,) 공부해보기->제일 아래에서 오버라이드 됨
 		list.addFirst("런던");
 		print(2, list);
 		list.addLast("서울");
 		print(3, list);
 
-		list.offer("파리");
+		list.offer("파리");//1+ add와 비슷한 것
 		print(4, list);
 		list.offerFirst("로마");
 		print(5, list);
@@ -66,6 +66,7 @@ public class Test05_LinkedList {
 		print(23, list);
 
 		List<String> list2 = Arrays.asList("북경", "상해");
+							//배열을 리스트로 만들어 줌
 		list.addAll(list2);
 		//list.sort();/Linked List의 sort는 지원되지 않음
 		Object obj[] = list.toArray();
@@ -79,10 +80,11 @@ public class Test05_LinkedList {
 		print(26, list);
 		
 		LinkedList<String> list3 = new LinkedList<String>(list2);
+								//list2도 리스트이고 이 리스트를 또 리스트로 만들어 줌
 		print(27, list3);
 		
 	}
-
+	//1+ sysout을 오버라이드해서 출력 형식을 바꿈
 	static void print(int n, List<String> list) {
 		System.out.println(n + " : " + list);//list.toString() 호출
 	}
