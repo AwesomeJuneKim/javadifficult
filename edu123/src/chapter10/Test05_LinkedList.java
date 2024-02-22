@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Test05 {
+public class Test05_LinkedList {
 
 	public static void main(String[] args) {
 		LinkedList<String> list = new LinkedList<>();
@@ -21,8 +21,9 @@ public class Test05 {
 		
 		list.add(1, "LA");
 		print(1, list);
+		//2+ print(,) 공부해보기
 		list.addFirst("런던");
-		Test05.print(2, list);
+		print(2, list);
 		list.addLast("서울");
 		print(3, list);
 
