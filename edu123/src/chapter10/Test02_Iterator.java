@@ -75,18 +75,20 @@ public class Test02_Iterator {
 		ArrayList lst = new ArrayList(); //크기가 10인 리스트를 생성
 		lst.add(s);
 		lst.add(ix);
-		//int len3 = list.get(0).length();//오류 > list.get(0).은 Object이기 때문이다.
+		lst.add(1, "good");
+		//int len3 = lst.get(0).length();//오류 > list.get(0).은 Object이기 때문이다.
 		int len4 = ((String)lst.get(0)).length();
 		
 		//페이지 468 -  generic 타입을 학습
-		List<String> list = new ArrayList<String>();//크기가 10인 리스트 생성
+		List<String> list = new ArrayList<>();//크기가 10인 리스트 생성
 		list.add("서울");
 		list.add("북경");
 		list.add("상해");
 		list.add("서울");
 		list.add("도쿄");
 		list.add("뉴욕");
-		int len5 = list.get(0).length();//list.get(0).은 String을 반환한다 이유는 생성자에서 T가 String으로 선언
+		int len5 = list.get(0).length();
+		//list.get(0).은 String을 반환한다 이유는 생성자에서 <T>(<E>)가 String으로 선언
 		//E get(int index) >> generic으로 선언된 데이터 타입이므로 
 		Collections.sort(list);
 		//list.sort(comparator);
