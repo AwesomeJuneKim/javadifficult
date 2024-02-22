@@ -17,8 +17,8 @@ public class Test07_HashMap_02 {
 		dic.put("교학상자", "가르치고 배우면서 서로 성장함");
 		dic.put(null, null); // HashMap은 null 값 저장 가능
 
-// 방법1 -iterator 사용
-		System.out.println("\n방법1:");
+// 방법1 -iterator 사용 1+가장 많이 사용하는 방법, 파이썬에서 사용
+		System.out.println("\n방법1:"+dic.keySet());
 		Iterator<String> keys = dic.keySet().iterator();
 		while (keys.hasNext()) {
 			String key = keys.next();
