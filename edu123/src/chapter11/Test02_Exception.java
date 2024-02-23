@@ -1,6 +1,6 @@
 package chapter11;
 
-public class Test02 {
+public class Test02_Exception {
 
 	public static void main(String[] args) {
 		try {
