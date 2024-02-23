@@ -11,7 +11,7 @@ public class Test01_1_ArrayList {
 		arr[0] = s;
 		arr[1] = i1;
 		//int len = arr[0].length();
-		//1+ Object클래스에 length()메소드가가 없으므로 에러 반면 s.length();는 가능
+		//1+ Object클래스에 length()메소드가 없으므로 에러 반면 s.length();는 가능
 		int len = ((String) arr[0]).length();
 		//1+ 수신객체arr[0]을 String으로 바꿔주면 length()메서드 사용가능
 
