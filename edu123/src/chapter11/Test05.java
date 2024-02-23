@@ -9,7 +9,7 @@ public class Test05 {
 		if (time < 0) {
 			time = 0;
 
-			throw new NagativeNumberException();
+			throw new NagativeNumberException("마이너스는 안돼.");
 
 		}
 		battery += time;
@@ -24,7 +24,7 @@ public class Test05 {
 			test.charge(-10);
 
 		} catch (Exception e) {
-			System.out.println("음수는 허용하지 않습니다.");
+			System.out.println(e.getMessage());
 		}
 	}
 
