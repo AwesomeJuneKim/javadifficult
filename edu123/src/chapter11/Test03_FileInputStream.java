@@ -7,8 +7,11 @@ public class Test03_FileInputStream {
 
 	public static void main(String[] args) {
 		try(FileInputStream fi= new FileInputStream("a.txt")){
-			int c= fi.read();
-			System.out.println((char)c);
+			int c;
+			while((c= fi.read())!=-1) {
+			
+			System.out.print((char)c);
+			}
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
