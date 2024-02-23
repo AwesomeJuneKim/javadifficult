@@ -1,8 +1,8 @@
-package chapter4;
+package chapter04;
 
 import java.util.Random;
 
-public class Test38 {
+public class Test38_1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -13,8 +13,9 @@ public class Test38 {
 				arr[i][j]=rand.nextInt(500);
 		for(int i=0;i<arr.length;i++) {
 			for(int j=0; j<arr[0].length;j++) {
-				if(i==j)
-				System.out.print(arr[i][j]+"\t ");
+				if(i>j)
+					System.out.print(arr[i][j]);
+				System.out.print("\t");
 			}
 			System.out.println();
 		}

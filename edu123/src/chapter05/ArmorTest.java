@@ -1,4 +1,4 @@
-package com.ruby.java.ch05;
+package chapter05;
 
 class Armor {
 //접근제한자 p.184

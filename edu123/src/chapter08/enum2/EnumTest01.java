@@ -1,4 +1,4 @@
-package com.ruby.java.ch08.enum2;
+package chapter08.enum2;
 
 
 	//enable numbering 정수화 해서 처리한다.

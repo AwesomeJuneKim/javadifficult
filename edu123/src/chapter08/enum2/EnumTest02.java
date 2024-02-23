@@ -1,4 +1,4 @@
-package com.ruby.java.ch08.enum2;
+package chapter08.enum2;
 /*
  * enum 클래스에 대하여 아래 코드를 학습하는 것이 중요하다
  * 자료구조 코딩을 위해 사전 학습으로 꼭 필요
