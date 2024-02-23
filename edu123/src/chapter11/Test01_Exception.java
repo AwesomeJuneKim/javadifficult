@@ -3,6 +3,17 @@ package chapter11;
 public class Test01_Exception {
 
 	public static void main(String[] args) {
+		test1();
+			System.out.println("GOOD");
+	}
+			
+		private static void test1() {
+			System.out.println("test2 start");
+			test2();
+			System.out.println("test1 end");
+		}
+		private static void test2() {
+			System.out.println("test1 start");
 		
 		try {
 			String s = new String("JAVA");
@@ -19,7 +30,7 @@ public class Test01_Exception {
 		} catch(Exception e) {
 			System.out.println("오류 발생: "+e);
 		}
-		System.out.println("GOOD");
+		System.out.println("test2 end");
 	}
 
 }
