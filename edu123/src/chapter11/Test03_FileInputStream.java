@@ -10,7 +10,7 @@ public class Test03_FileInputStream {
 			int c;
 			while((c= fi.read())!=-1) {
 			
-			System.out.print((char)c);
+			System.out.println((char)c);
 			}
 		}catch(IOException e) {
 			e.printStackTrace();

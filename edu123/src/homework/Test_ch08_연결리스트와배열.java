@@ -34,7 +34,7 @@ class LinkedList3 {
 	}
 
 	void showList() {
-		System.out.println();
+		System.out.println("LinkedList: ");
 		Node3 p = first;
 
 	}
@@ -91,6 +91,7 @@ public class Test_ch08_연결리스트와배열 {
 			else
 				indx++;
 		}
+		return count+1;
 	}
 public static void main(String[] args) {
 	int[]list = new int[10];
