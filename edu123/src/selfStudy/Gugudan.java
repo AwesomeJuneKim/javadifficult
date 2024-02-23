@@ -7,12 +7,12 @@ public class Gugudan {
 		//i단 출력시작
 		
 		for(int i=1; i<=9; i++) {
-			int j=num;
+			
 //			while(num<=9) {
 
-				System.out.print(j+"x"+i+"="+j*i);
+				System.out.print(num+"x"+i+"="+num*i);
 				System.out.println();
-				j++;
+				
 //		}
 		}
 		
