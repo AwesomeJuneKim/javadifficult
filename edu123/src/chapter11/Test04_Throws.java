@@ -1,6 +1,6 @@
 package chapter11;
 
-public class Test04 {
+public class Test04_Throws {
 	public static void test() throws Exception{
 		int t=10/0;
 
