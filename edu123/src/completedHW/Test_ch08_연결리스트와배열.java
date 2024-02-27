@@ -1,4 +1,4 @@
-package homework;
+package completedHW;
 
 class Node3 {
 	int data;
@@ -36,6 +36,11 @@ class LinkedList3 {
 	void showList() {
 		System.out.println("LinkedList: ");
 		Node3 p = first;
+		while(p!=null) {
+			System.out.println(p.data+" ");
+			p=p.link;
+		}
+	System.out.println();
 
 	}
 
@@ -109,5 +114,6 @@ public static void main(String[] args) {
 	ll.showList();
 	ll.insert(3);ll.showList();
 	ll.insert(7);ll.showList();
+}
 }
 }
