@@ -2,25 +2,25 @@ package selfStudy;
 
 public class Gugudan {
 
-	public void print(int num) {
-		System.out.println(num+"단");
-		//i단 출력시작
+	public void printColumn(int col) {
 		
 		for(int i=1; i<=9; i++) {
-			
-//			while(num<=9) {
-
-				System.out.print(num+"x"+i+"="+num*i);
-				System.out.println();
+			while(col<4) {
+			for(int j=2; j<=9;j++) {
 				
-//		}
+				System.out.print(j+"x"+i+"="+i*j+"\t");
+			}
+			}
+			System.out.println();
+
+				//System.out.println();
+		
+		
+
 		}
-		
-		
-		
-		
-		//i단 출력 끝
-		
+
 	}
+
+	
 	
 }
