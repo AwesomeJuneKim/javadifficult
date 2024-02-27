@@ -1,39 +1,43 @@
 package chapter13.study;
 
-class Bag{
-	private Object thing;
+class Bag<T extends Solid>{
+	private T thing;
 	
-	public Bag(Object thing) {
+	public Bag(T thing) {
 		this.thing=thing;
 	}
 
-	public Object getThing() {
+	public T getThing() {
 		return thing;
 	}
 
-	public void setThing(Object thing) {
+	public void setThing(T thing) {
 		this.thing = thing;
 	}
+	
 	void showType() {
 		System.out.println("T의 타입은 "+ thing.getClass().getName());
 	}
 	
 }
-class Book{}
-class PencilCase{}
-class Notebook{}
+class Solid{}
+class Liquid{}
+class Book extends Solid{}
+class PencilCase extends Solid{}
+class Notebook extends Solid{}
 
-public class BagTest2 {
+class water extends Liquid{}
+class coffee extends Liquid{}
+
+public class BagTest {
 	public static void main(String[] args) {
-		Bag bag= new Bag(new Book());
-		Bag bag2= new Bag(new PencilCase());
-		Bag bag3= new Bag(new Notebook());
-
-		bag.showType();
-		bag2.showType();
-		bag3.showType();
+		Bag<Book> bag= new Bag<>(new Book());
+		Bag<PencilCase> bag2= new Bag<>(new PencilCase());
+		Bag<Notebook> bag3= new Bag<>(new Notebook());
 		
-		bag=bag2;//실행시 오류가 난다.
+		Bag<Water> bag4= new Bag<>(new Water());
+		Bag<Coffee> bag5= new Bag<>(new Coffee());
+		
 	}
 	
 
