@@ -37,7 +37,7 @@ public class BagTest {
 		
 		Bag<Water> bag4= new Bag<>(new Water());
 		Bag<Coffee> bag5= new Bag<>(new Coffee());
-		
+		//부모 제네릭이 다르므로 에러가 난다.
 	}
 	
 
