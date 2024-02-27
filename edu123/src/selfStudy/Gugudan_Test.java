@@ -3,12 +3,8 @@ package selfStudy;
 public class Gugudan_Test {
 	public static void main(String[] args) {
 		Gugudan ggd= new Gugudan();
-		ggd.print(2);
-		System.out.println("-".repeat(15));
-		ggd.print(3);
-		System.out.println("-".repeat(15));
-		ggd.print(4);
-		System.out.println("-".repeat(15));
+		ggd.printHorizontal();
+		
 		System.out.println("END");
 	}
 
