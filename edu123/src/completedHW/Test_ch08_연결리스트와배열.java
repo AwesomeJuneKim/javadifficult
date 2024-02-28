@@ -1,4 +1,4 @@
-package homework;
+package completedHW;
 
 class Node3 {
 	int data;
@@ -14,9 +14,10 @@ class LinkedList3 {
 	Node3 first;// node를 저장하는 first필드가 하나 생성됨
 
 	void append(int data) {
-		
-		if (first == null) {
-			first = new Node3(data);
+		Node3 p = first, q = null;// q는 p를 대입할 빈 공간
+		Node3 newNode = new Node3(data);
+		if (p == null) {
+			first = newNode;
 			return;
 		} else {
 			while (p != null) {
@@ -35,6 +36,11 @@ class LinkedList3 {
 	void showList() {
 		System.out.println("LinkedList: ");
 		Node3 p = first;
+		while(p!=null) {
+			System.out.println(p.data+" ");
+			p=p.link;
+		}
+	System.out.println();
 
 	}
 
@@ -109,4 +115,5 @@ public static void main(String[] args) {
 	ll.insert(3);ll.showList();
 	ll.insert(7);ll.showList();
 }
-}}
+}
+}
