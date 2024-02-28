@@ -26,7 +26,9 @@ public class AnnoTest2 {
 		AnnoTest2 obj = new AnnoTest2();
 		try {
 			Class<?> c = obj.getClass();
+			//Class= 클래스의 정보를 갖고있는 클래스(메타데이터)
 			Annotation annoList[] = c.getAnnotations();
+			//해당 클래스에 선언되어 있는 어노테이션을 다 갖고와서 배열에 넣음
 			System.out.println("클래스의 annotation 목록");
 			for (Annotation item : annoList)
 				System.out.println(item);
