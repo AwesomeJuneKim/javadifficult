@@ -1,0 +1,22 @@
+package chapter13;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+@Retention(RetentionPolicy.RUNTIME)
+@interface Service {
+}
+
+@Service
+public class AnnoTest3 {
+	public static void main(String[] args) {
+		AnnoTest3 obj = new AnnoTest3();
+		try {
+			Class<?> c = obj.getClass();
+			System.out.println("Service 어노테이션을 지정함");
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		}
+	}
+}
