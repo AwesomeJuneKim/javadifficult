@@ -1,13 +1,12 @@
 package selfStudy;
 
-public class Gugudan {
+public class Practice4 {
 
-	public void printColumn(int col) {
-
-		for (int i = 2; i <= 9; i += col) {
+	public static void main(String[] args) {
+		for (int i = 2; i <= 9; i += 3) {
 			for (int j = 1; j <= 9; j++) {
-				for (int k = 0; k < col; k++) {
-					if (i + k <= col+1) {
+				for (int k = 0; k < 3; k++) {
+					if (i + k <= 9) {
 						System.out.print((i + k) + " x " + j + " = " + ((i + k) * j) + "\t");
 					}
 				}
