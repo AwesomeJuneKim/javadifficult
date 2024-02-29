@@ -11,7 +11,7 @@ public class Gugudan {
 						System.out.print((i + k) + " x " + j + " = " + ((i + k) * j) + "\t");
 					}
 				}
-				System.out.println();
+				System.out.println(); 
 			}
 			System.out.println();
 
