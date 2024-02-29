@@ -17,13 +17,13 @@ public class Test08 {
 	public static void main(String[] args) {
 		String str = "Korea,Australia,China,Germany,Spain,Turkey";
 
-		try {
 			StringFunc2 sf = (s) -> {
 				if (s.length() == 0)
 					throw new EmptyStringException();
 				return s.split(",");
 			};
-
+			
+			try {
 			String result[] = sf.modify(str);
 			System.out.println(Arrays.toString(result));
 
