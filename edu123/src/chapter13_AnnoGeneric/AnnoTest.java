@@ -1,4 +1,4 @@
-package chapter13;
+package chapter13_AnnoGeneric;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

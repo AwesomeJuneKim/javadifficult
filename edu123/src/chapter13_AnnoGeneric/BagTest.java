@@ -1,4 +1,4 @@
-package chapter13;
+package chapter13_AnnoGeneric;
 
 class Bag<T, N>{
 	private T thing;

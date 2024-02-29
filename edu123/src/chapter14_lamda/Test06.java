@@ -1,4 +1,4 @@
-package chapter14;
+package chapter14_lamda;
 
 interface MyFunc<T>{
 	T modify(T t);

@@ -1,4 +1,4 @@
-package chapter14;
+package chapter14_lamda;
 
 interface StringFunc{
 	String modify(String s);
